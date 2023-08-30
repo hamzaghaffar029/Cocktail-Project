@@ -2,7 +2,6 @@ import React from 'react';
 import '../Css/ItemList.scss';
 import SingleItem from './SingleItem';
 import { useGlobalContext } from '../Context';
-import Loading from 'react-loading';
 import LoadingComponent from './Loading';
 
 const ItemList = () => {

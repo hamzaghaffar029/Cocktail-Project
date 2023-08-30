@@ -1,6 +1,8 @@
-import React, { useEffect, useState, useSyncExternalStore } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Css/Details.scss';
-import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import LoadingComponent from '../Other Components/Loading';
+
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
 const Details = () => {
   const { id } = useParams();
@@ -56,9 +58,11 @@ const Details = () => {
   const { img, name, info, category, glass, instructions, ingredients } =
     cocktail;
   if (loading) {
-    return <div className="loading">
+    return (
+      <div className="loading">
         <LoadingComponent />
       </div>
+    );
   }
 
   return (
