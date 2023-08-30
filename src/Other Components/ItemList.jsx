@@ -2,11 +2,17 @@ import React from 'react';
 import '../Css/ItemList.scss';
 import SingleItem from './SingleItem';
 import { useGlobalContext } from '../Context';
+import Loading from 'react-loading';
+import LoadingComponent from './Loading';
 
 const ItemList = () => {
   const { isLoading, cocktails } = useGlobalContext();
   if (isLoading) {
-    return <h1 className="loading">Loading....</h1>;
+    return (
+      <div className="loading">
+        <LoadingComponent />
+      </div>
+    );
   }
   if (cocktails.length < 1) {
     return <h1 className="loading">No such Cocktails!!</h1>;

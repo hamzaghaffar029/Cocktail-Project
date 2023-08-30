@@ -56,7 +56,9 @@ const Details = () => {
   const { img, name, info, category, glass, instructions, ingredients } =
     cocktail;
   if (loading) {
-    return <h1 className="loading">Loading....</h1>;
+    return <div className="loading">
+        <LoadingComponent />
+      </div>
   }
 
   return (
