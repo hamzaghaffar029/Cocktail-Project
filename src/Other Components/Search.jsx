@@ -5,7 +5,7 @@ const Search = () => {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = useRef('');
   const handleChange = () => {
-    rchTerm(searchValue.current.value);
+    setSearchTerm(searchValue.current.value);
   };
 
   const handleSubmit = (e) => {
