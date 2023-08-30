@@ -1,0 +1,21 @@
+.about {
+  //   border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  .about-container {
+    // border: 2px solid;
+    width: 660px;
+    text-align: center;
+    line-height: 2rem;
+    h1 {
+      font-size: 3rem;
+      margin-top: 30px;
+      color: var(--Primary-color);
+    }
+    p {
+      margin-top: 12px;
+      color: gray;
+      font-weight: 300;
+    }
+  }
+}

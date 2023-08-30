@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=REM:wght@200&display=swap');
+
+.nav-bar {
+  // border: 2px solid red;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'REM', sans-serif;
+  background-color: white;
+  box-shadow: 0px 2px 2px gray;
+  .logo {
+    text-decoration: none;
+    color: var(--Primary-color);
+    font-weight: bolder;
+    position: relative;
+    left: 25px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .nav-links-container {
+    // border: 1px solid red;
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    .nav-links {
+      text-decoration: none;
+      color: black;
+      letter-spacing: 2px;
+
+      margin: 0px 12px;
+      font-size: larger;
+      &:hover {
+        color: var(--Primary-color);
+        transition: all 0.3s ease-in-out;
+      }
+      &:active {
+        color: var(--Primary-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav-links-container {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .nav-bar {
+    flex-direction: column !important;
+    align-items: center;
+    height: 100px;
+    .logo {
+      position: relative;
+      left: 0px;
+    }
+    .nav-links-container {
+      position: relative;
+      margin-top: 14px;
+      width: fit-content !important;
+      margin-right: 0px;
+    }
+  }
+}

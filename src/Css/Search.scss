@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=REM:wght@200&display=swap');
+.search-section {
+  //   border: 2px solid red;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'REM', sans-serif;
+  .search-container {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 12px 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 12px;
+    box-shadow: 2px 2px 5px gray;
+  }
+  .search-text,
+  .search-input {
+    margin: 12px 0px;
+  }
+  .search-text {
+    font-size: 23px;
+    font-weight: bolder;
+    color: var(--Primary-color);
+  }
+  .search-input {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-container {
+    width: 350px !important;
+  }
+}
+@media screen and (max-width: 322px) {
+  .search-container {
+    width: 300px !important;
+  }
+}

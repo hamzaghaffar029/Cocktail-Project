@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=REM:wght@200&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Primary-color: rgb(68, 173, 92);
+}
+body {
+  background-color: aliceblue;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'REM', sans-serif;
+}
