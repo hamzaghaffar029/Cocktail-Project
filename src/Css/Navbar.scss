@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=REM:wght@200&display=swap');
-
+.active {
+  color: var(--Primary-color) !important;
+}
 .nav-bar {
   // border: 2px solid red;
   height: 60px;
@@ -29,15 +31,11 @@
       text-decoration: none;
       color: black;
       letter-spacing: 2px;
-
       margin: 0px 12px;
       font-size: larger;
       &:hover {
         color: var(--Primary-color);
         transition: all 0.3s ease-in-out;
-      }
-      &:active {
-        color: var(--Primary-color);
       }
     }
   }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../Css/Navbar.scss';
 
 const Navbar = () => {
@@ -9,12 +9,12 @@ const Navbar = () => {
         CockTails
       </Link>
       <div className="nav-links-container">
-        <Link to="/" className="nav-links">
+        <NavLink to="/" className="nav-links">
           Home
-        </Link>
-        <Link to="/about" className="nav-links">
+        </NavLink>
+        <NavLink to="/about" className="nav-links">
           About
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );
