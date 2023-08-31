@@ -46,9 +46,22 @@ function Navbar2() {
         >
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                to="/"
+                onClick={() => {
+                  setMenuOpen(false);
+                }}
+              >
+                Home
+              </NavLink>
             </li>
-            <NavLink to="/about" className="btn ">
+            <NavLink
+              to="/about"
+              className="btn "
+              onClick={() => {
+                setMenuOpen(false);
+              }}
+            >
               About
             </NavLink>
           </ul>
