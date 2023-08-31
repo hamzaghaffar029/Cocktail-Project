@@ -68,7 +68,7 @@ const Details = () => {
   return (
     <section>
       <div className="details-container">
-        <div className="header">
+        <div className="header-detail">
           <Link to="/" className="btn">
             Back to home
           </Link>
