@@ -6,6 +6,7 @@ const Search = () => {
   const searchValue = useRef('');
   const handleChange = () => {
     setSearchTerm(searchValue.current.value);
+    console.log(searchValue.current.value);
   };
 
   const handleSubmit = (e) => {
