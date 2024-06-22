@@ -1,8 +1,23 @@
-# React + Vite
+Cocktail Explorer 🍹
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description:
+Developed a sophisticated cocktail exploration application using React.js, integrating multiple APIs to provide a seamless and interactive user experience. This project demonstrates proficiency in API integration, state management, and dynamic content rendering.
 
-Currently, two official plugins are available:
+Key Features:
+Comprehensive Cocktail List 📋: Fetched and displayed a complete list of cocktails using an external API, allowing users to browse a wide variety of options.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Detailed Cocktail Information 🥂: Implemented a feature to get detailed information about a specific cocktail by clicking on a 'Details' button, enhancing user engagement and knowledge.
+
+Search Functionality 🔍: Integrated a search API to enable users to search for specific cocktails, making the application more user-friendly and efficient.
+
+State Management 🧠: Managed application state effectively using React Hooks and Context API to ensure smooth and consistent user interactions.
+
+Responsive Design 📱: Ensured the application is fully responsive, providing an optimal user experience on both desktop and mobile devices.
+
+Technologies Used:
+
+Frontend: React.js, JavaScript, HTML, CSS
+API Integration: Fetch API 
+State Management: React Hooks, Context API
+Styling: SCSS / CSS
+Skills: React.js · Web Application Development · JavaScriptS
